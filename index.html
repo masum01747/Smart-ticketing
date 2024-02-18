@@ -59,11 +59,11 @@
               </div>
 
         </nav>
-        <section class="  ">
+        <section id="pBahan" class="  ">
             <div class="bg-[url(images/banner.png)] bg-center bg-no-repeat rounded-xl py-72 flex flex-col justify-center items-center gap-8 flex-wrap ">
               <h2 class="text-6xl font-raleway font-extrabold text-white flex flex-col justify-center items-center">End-to-End Travel With <br> <span class=" text-[#1DD100] "> P Paribahan</span> </h2>
               <p class="text-white font-inter flex text-center">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
-              <button class="bg-[#1DD100] p-4 font-bold text-xl rounded-xl">Buy Tickets</button>
+              <button onclick="play()" class="bg-[#1DD100] p-4 font-bold text-xl rounded-xl">Buy Tickets</button>
               
             </div>
 
@@ -160,9 +160,9 @@
 
       </section>
       <!-- seat section -->
-      <section class="bg-white py-6 px-6 lg:px-24 mx-auto relative lg:flex gap-6  ">
+      <section id="ticketSeat" class="bg-white py-6 px-6 lg:px-24 mx-auto relative lg:flex gap-6 hidden">
         <!-- seat left side -->
-            <div class="w-3/5">
+            <div class="w-3/5 ">
               <div class="">
                 <h2 class="text-xl font-bold mb-2">Select Your Seat</h2>
                 <hr class="border-dotted">
@@ -339,6 +339,7 @@
     <footer>
 
     </footer>
+    <script src="utility.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

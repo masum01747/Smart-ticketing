@@ -1,3 +1,19 @@
+// function play(){
+//     const pBahan= document.getElementById('pBahan');
+//     pBahan.classList.add('hidden');
+//     const ticket =document.getElementById('ticketSeat');
+//     ticket.classList.remove('hidden')
+// }
+function play(){
+    hideElementById('pBahan');
+    showElementById('ticketSeat');
+}
+
+
+
+
+
+
 const aOne = document.getElementById('aOne');
 aOne.addEventListener = ('click', function(){
     aOne.style.backgroundColor='Red'
