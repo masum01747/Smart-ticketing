@@ -55,11 +55,16 @@ function play(){
 
 // // }
 let count = 0;
+let totalSeat = 40;
+
 const allBtn = document.getElementsByClassName('add-btn');
 for(const btn of allBtn){
     btn.addEventListener('click',function(e){
-        count=count+1
+        count=count+1;
+        totalSeat = parseInt(totalSeat)-1;
         const seatNumber = e.target.innerText
+        e.target.style.backgroundColor='Green'
+        e.target.disable = true;
         const targetPlace = document.getElementById('selectedPlace');
         const li = document.createElement('li');
         const p = document.createElement('P');
@@ -83,6 +88,7 @@ for(const btn of allBtn){
         document.getElementById('grandValu').innerText = sum2;
 
 
+        setInnerTex('totalSeat',totalSeat)
 
         setInnerTex('totalCost',sum)
         setInnerTex('seat',count)
