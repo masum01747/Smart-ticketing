@@ -83,7 +83,7 @@
           <img src="images/cupon-devider.png" alt="">
           <!-- <hr class="border-dotted border-white	border-y-2"> -->
           <div>
-            <h2 class="font-bold">NEW15</h2>
+            <h2 class="font-bold" id="news15">NEW15</h2>
             <p>Coupon Code</p>
           </div>
   
@@ -98,7 +98,7 @@
           <img src="images/cupon-devider.png" alt="">
           <!-- <hr class="border-dotted border-white	"> -->
           <div>
-            <h2 class="font-bold">Couple 20</h2>
+            <h2 class="font-bold" id="coupne20">Coupne 20</h2>
             <p>Coupon Code</p>
           </div>
   
@@ -297,15 +297,16 @@
                   <p>Price</p>
                 </div>
                 <hr class="border-dotted">
-                <div id="selectedContainer"></div>
-                <div class="flex justify-between mb-3">
+                <ul id="selectedPlace" class="flex justify-between mb-3  "></ul>
+                <!-- <div id="selectedContainer"></div> -->
+                <div id="economy" class="flex justify-between mb-3">
                   
                   <p>C2</p>
                   <p>Economy</p>
                   <p>550</p>
                 </div>
                 <hr class="border-dotted">
-                <div class="flex justify-between mb-3">
+                <div id="economy1" class="flex justify-between mb-3">
                   <p>C2</p>
                   <p>Economy</p>
                   <p>550</p>
@@ -313,13 +314,13 @@
                 <hr>
                 <div class="flex justify-between mb-3">
                   <p>Total Price</p>
-                  <p> BDT <span>1000</span></p>
+                  <p> BDT <span id="totalCost">0</span></p>
                 </div>
                <div class="flex justify-between"> <input type="text" name="text" id="text" placeholder="Have Any coupon"><button class="bg-[#1DD100] text-white p-1 rounded-sm pl-3 pr-3">Apply</button></div>
                 <!-- <input type="button" value="Apply" placeholder="Have any coupon"> -->
                 <div class="flex justify-between mb-3">
                   <p>Grand Total</p>
-                  <p>BDT <span>1100</span></p>
+                  <p>BDT <span id="grandValu">0</span></p>
                 </div><br>
                 <label for="text">Passenger Name*</label><br><br>
                 
