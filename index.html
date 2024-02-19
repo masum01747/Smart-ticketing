@@ -71,7 +71,7 @@
             
     </header>
     <main class="bg-[#F7F8F8]">
-      <section class="flex flex-col gap-6 container px-6 lg:px-24 mx-auto ">
+      <section class="flex lg:flex-col gap-6 container px-6 lg:px-24 mx-auto ">
         <h2 class="font-bold text-4xl text-center">Best offers for you</h2>
       <div class="flex justify-between gap-4">
         <div class="bg-[#FFBF0F] rounded-xl font-inter flex justify-center items-center w-1/2 h-52 gap-8 ">
@@ -98,8 +98,8 @@
           <img src="images/cupon-devider.png" alt="">
           <!-- <hr class="border-dotted border-white	"> -->
           <div>
-            <h2 class="font-bold" id="coupne20">Coupne 20</h2>
-            <p>Coupon Code</p>
+            <h2 class="font-bold" id="coupne20">Couple 20</h2>
+            <p>Coupon Code </p>
           </div>
   
         </div>
@@ -182,10 +182,10 @@
                   <hr class="border-dotted ">
               </div>
               <!-- seat started -->
-                  <div class="w-[p-560px]">
+                  <div class="w-[p-560px] ">
                       <div class=" "><img class="absolute top-24 right-[580px] p-4" src="images/wheel.png" alt=""></div>
                       <!-- 2nd row -->
-                      <div class="flex justify-between  mb-3 mt-14">
+                      <div id="selectedFour" class="flex justify-between  mb-3 mt-14">
                         <kbd class="kbd pr-10 pl-10  bg-white border-none">A</kbd>
                         <button   class="bg-gray-200 p-1 pl-8 pr-8 rounded-lg add-btn">A1</button>
                         
@@ -346,7 +346,8 @@
                   <p>Price</p>
                 </div>
                 <hr class="border-dotted">
-                <ul id="selectedPlace" class="flex justify-between mb-3  "></ul>
+                <div id="selectedPlace" class="flex justify-between mb-3 selectedPlace "></div>
+                <!-- <ul id="selectedPlace" class="flex justify-between mb-3  "></ul> -->
                 <!-- <div id="selectedContainer"></div> -->
                 <div id="economy" class="flex justify-between mb-3">
                   
@@ -365,7 +366,8 @@
                   <p>Total Price</p>
                   <p> BDT <span id="totalCost">0</span></p>
                 </div>
-               <div class="flex justify-between"> <input type="text" name="text" id="text" placeholder="Have Any coupon"><button id='btnApply' class="bg-[#1DD100] text-white p-1 rounded-sm pl-3 pr-3">Apply</button></div>
+               <div class="flex justify-between"> <input type="text" name="text" id="couponinput" placeholder="Have Any coupon">
+                <button id='btnApply' class="bg-[#1DD100] text-white p-1 rounded-sm pl-3 pr-3">Apply</button></div>
                 <!-- <input type="button" value="Apply" placeholder="Have any coupon"> -->
                 <div class="flex justify-between mb-3">
                   <p>Grand Total</p>
@@ -381,7 +383,7 @@
                 <label for="e-mail">Email Id</label><br><br>
                 
                 <input class="w-full" type="email" name="email" id="email" placeholder="Enter Your Email Id"><br><br>
-                <button class="bg-[#1DD100] text-white p-1 rounded-xl pl-3 pr-3 w-full">Next</button></div>
+                <button id="modal" class="bg-[#1DD100] text-white p-1 rounded-xl pl-3 pr-3 w-full">Next</button></div>
 
             </div>
           </div>
