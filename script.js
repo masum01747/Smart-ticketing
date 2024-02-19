@@ -14,7 +14,7 @@ let totalSeat = 40;
 const allBtn = document.getElementsByClassName('add-btn');
 for(const btn of allBtn){
     btn.addEventListener('click',function(e){
-         count=count+1;
+        //  count=count+1;
         totalSeat = parseInt(totalSeat)-1;
         const seatNumber = e.target.innerText
         e.target.style.backgroundColor='Green'
@@ -32,12 +32,12 @@ for(const btn of allBtn){
         div.appendChild(p2);
         div.appendChild(p3);
         targetPlace.appendChild(div);
-        // if(selectedPlace<4){
-        //     count=count+1
-        // }
-        // else{
-        //     alert('Please select only 4 seats');
-        // }
+        if(count<4){
+            count=count+1
+        }
+        else{
+            alert('Please select only 4 seats');
+        }
         /*const targetPlace = document.getElementById('selectedPlace');
         const li = document.createElement('li');
         const p = document.createElement('P');
@@ -59,6 +59,7 @@ for(const btn of allBtn){
         const grandConverted = parseInt(grandTotal);
         const sum2 = grandConverted+parseInt('550');
         document.getElementById('grandValu').innerText = sum2;
+        
 
 
         setInnerTex('totalSeat',totalSeat)
